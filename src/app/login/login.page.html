@@ -1,0 +1,40 @@
+<ion-content style="--background: #ffeff1;">
+
+  <div style="margin-top: 10rem;">
+
+    <div style="text-align: center; font-size: 24px; font-weight: 500;">
+      Login
+    </div>
+
+    <div style="margin: 50px 20px 0px 20px;">
+      <div style="font-weight: bold; margin-bottom: 12px;">
+        Email
+      </div>
+
+      <div
+        style="border: 1px solid #d3d3d3; border-radius: 12px; padding-left: 10px; margin-bottom: 25px; background: white;">
+        <ion-input mode="md" [(ngModel)]="email" type="Email" placeholder="Enter your Email"></ion-input>
+      </div>
+
+      <div style="font-weight: bold; margin-bottom: 12px;">
+        Password
+      </div>
+
+      <div style="border: 1px solid #d3d3d3; border-radius: 12px; padding: 0px 10px 0px 10px; margin-bottom: 12px; background: white;">
+        <ion-input mode="md" [(ngModel)]="password" [type]="isPasswordVisible ? 'text' : 'password'" placeholder="Enter your Password">
+          <ion-icon [name]="isPasswordVisible ? 'eye-off-outline' : 'eye-outline'" slot="end" (click)="togglePasswordVisibility()"></ion-icon>
+        </ion-input>
+      </div>
+
+      <div style="text-align: center; color: red; font-size: 14px;">
+        Forgot Password?
+      </div>
+
+      <div (click)="login()" style="margin-top: 2rem;">
+        <ion-button color="danger" expand="block">Login</ion-button>
+      </div>
+    </div>
+
+
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "hepto_task",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
